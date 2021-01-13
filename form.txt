@@ -1,0 +1,32 @@
+<form name="contact" action="send.php" method="post">
+<table width="500" height="200" border="5" bordercolor="black" cellspacing="2" cellpadding="2" align="center" background=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpuRcCeJWbGnnejCuJHstYsGiju2fBvA4Xww&usqp=CAU>
+	<tr>
+		<td align="center" colspan="2">contact form </td>
+	<tr>
+	<tr>
+		<td>First Name</td>
+		<td><input type="text" name="fname" maxlength="50" /></td>
+	<tr>
+	<tr>
+		<td>Last Name</td>
+		<td><input type="text"name="lname" maxlength="50"/></td>
+	<tr>
+	<tr>
+		<td>Email</td>
+		<td><input type="text"/></td>
+	<tr>
+	<tr>
+		<td>Message</td>
+		<td>
+		<textarea name="message" cols="45" rows="5"> </textarea>
+		</td>
+	<tr>
+	<tr>
+		<td></td>
+		<td>
+		<input type="submit" name="submit" value="Submit"/>
+		<input type="reset" name="reset" value="Reset"/>
+		</td>
+	<tr>
+</table>
+</form>

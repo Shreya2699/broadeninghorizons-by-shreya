@@ -7,10 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<style>
 		
-		#header {
-			background: black;
-			font-family: Arial; 
-			height: 100px;
+		
+		.header {
+			  overflow: hidden;
+			  background-color:  #333;
+			  
+			}
+		.header a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: relative;}
+			  .header.responsive a.icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
 			}
 		.center {
 		  display: block;
@@ -20,44 +53,57 @@
 		}
 	</style>
 </head>
-<body  background=https://st.depositphotos.com/1954507/2120/v/600/depositphotos_21206817-stock-illustration-lights-and-hearts-on-pink.jpg style="background-repeat:no-repeat; background-size:cover; margin-right:90px; margin-left:90px; margin-top:30px; margin-bottom:30px; border:black;border-width:10px;border-style:solid;">
-<div id="header">
-	
-		<table width="547" border="0" cellpadding="2" cellspacing="2" align="center">
-				<td width="96"><font color="white"><a href='shreya123.html' style="color:white">  <h3>Home</h3></a></font></td>
-				<td width="96"><font color="white"><a href='recipes.html' style="color:white">  <h3>Recipes</h3></a></font></td>
-				<td width="96"><font color="white"><a href='articles.html' style="color:white">   <h3>Articles</h3></a></font></td>
-				<td width="96"><font color="white"><a href='contact.html' style="color:white"> <h3>Contact</h3></a></font></td>
-				<td width="96"><font color="white"> <a href='art gallery.html'style="color:white"><h3>Art gallery</h3></a></font></td>
-		</table>
+<body  background=https://st.depositphotos.com/1954507/2120/v/600/depositphotos_21206817-stock-illustration-lights-and-hearts-on-pink.jpg style="background-repeat:no-repeat; background-size:cover; margin:auto; border:black;border-width:10px;border-style:solid;">
+<div class="header" id="myHeader">
+  
+  
+    <a href='shreya123.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
 	
 	</div>
 <h1 style="text-align:center;">Live in colours</h1>
 <p><h3>Since the advent of human life on earth, ART in some form or the other has also evolved. Art has always fascinated us because of it's caliber of expressing thoughts, emotion and ability to change opinion in an unspoken way. It acts as a repository of our memory. </p>
 
-<img alt="" src="food123/a1.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a1.JPG"  class="center">
 
 
 
 <p>Art can permeate the deepest part of us where no words exist. Art helps to better our mental health. Simple form of art like drawing can increase cerebral activities that leads to release of neurotransmitters and hence gives the feeling of euphoria. The role played by art therapy in betterment of mental health is truly commendable. </p>
 
-<img alt="" src="food123/a2.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a2.JPG" class="center">
 
 
 <p>Every child is an artist. The problem is how to remain an artist once we grow up. However in our daily hustle bustle our mental health gets affected a lot. As a consequence of this we suffer from stress, hypertension etc. At this point we depend on pills to improve our condition rather than trying to better our dopamine secretion naturally. Art therapy like mandala drawing and colouring has proved a very efficient stress buster. Psychologist have also found people suffering from trauma can express their thoughts n feelings easily through art. </p>
 
-<img alt="" src="food123/a3.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a3.JPG" class="center">
 
 
 <p>Art helps to improve concentration. U don't need to be born artist to draw or paint. It's true that the creative energy of every individual is variable.But everyone has some amount of creativity in them.Even if we can't create a beautiful piece of art , we can at least doodle. Even doodling helps improve our focus n increase our concentration power. </p>
 
 
-<img alt="" src="food123/a4.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a4.JPG" class="center">
 
 <p>Art can help us create a better connection with ourselves. It helps us to give up addiction like smoking. We become conscious of our subtle thoughts and connect with ourselves better. In this rat race sometimes it's necessary to take a break and  listen to our inner thoughts so that we can try to give up our ill habits. </p>
-<img alt="" src="food123/a5.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a5.JPG"  class="center">
 
 
 
 <p>Art speaks more eloquently than words. So rather than getting bored these days let's take up art as a hobby and try to remain calm n relaxed even in this tensed atmosphere. Picture below is a piece of art that I created during this lock down period 😁😁.</p>
-<img alt="" src="food123/a6.JPG" width="400" height="500" class="center">
+<img alt="" src="food123/a6.JPG" class="center">

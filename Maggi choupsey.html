@@ -5,12 +5,45 @@
 	<meta name="hello" content="page description"/>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		
-		#header {
-			background: black;
-			font-family: Arial; 
-			height: 100px;
+		.header {
+			  overflow: hidden;
+			  background-color:  #333;
+			  
+			}
+		.header a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: relative;}
+			  .header.responsive a.icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
 			}
 		.center {
 		  display: block;
@@ -20,18 +53,30 @@
 		}
 	</style>
 </head>
-<body  background=https://st.depositphotos.com/1954507/2120/v/600/depositphotos_21206817-stock-illustration-lights-and-hearts-on-pink.jpg style="background-repeat:no-repeat; background-size:cover; margin-right:90px; margin-left:90px; margin-top:30px; margin-bottom:30px; border:black;border-width:10px;border-style:solid;">
-<div id="header">
-	
-		<table width="547" border="0" cellpadding="2" cellspacing="2" align="center">
-				<td width="96"><font color="white"><a href='shreya123.html' style="color:white">  <h3>Home</h3></a></font></td>
-				<td width="96"><font color="white"><a href='recipes.html' style="color:white">  <h3>Recipes</h3></a></font></td>
-				<td width="96"><font color="white">  <h3><a href='articles.html' style="color:white"> Articles</h3></a></font></td>
-				<td width="96"><font color="white"><a href='contact.html' style="color:white"> <h3>Contact</h3></a></font></td>
-				<td width="96"><font color="white"> <a href='art gallery.html'style="color:white"><h3>Art gallery</h3></a></font></td>
-		</table>
-	
-	</div>
+<body  background=https://st.depositphotos.com/1954507/2120/v/600/depositphotos_21206817-stock-illustration-lights-and-hearts-on-pink.jpg style="background-repeat:no-repeat; background-size:cover; margin:auto; border:black;border-width:10px;border-style:solid;">
+
+<div class="header" id="myHeader">
+  
+  
+    <a href='shreya123.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
 <h1 style="text-align:center;">Maggi Chopsuey</h1>
 
 <h3><p>Noodles, this yummy dish prepared in over 1000 varieties has always been a click for our taste buds. If we check its origin it was first found in a 25-220CE Chinese book. Eaten as a staple food to snacks with different names itrion,itriya,lamian, ramen noodles have always been a great hit. So here is a amazing noodles recipe for you made with our India's favourite Maggi to enjoy this monsoon... Let's get ready and start creating something really delicious!!</P>
@@ -73,7 +118,7 @@
 <P>Procedure-</P>
 
 <p>Boil and stain the Maggi noodles cooling them with cold water so that they don't stick together. In a pan add oil, chopped garlic, onions , carrot, corn, capsicum and fry. Add tomato sauce, soya sauce and cornflour mixed with a little water to it to provide a gravy-like consistency. Add black pepper and salt to it. In another pan add some oil, place the boiled noodles in a round shape and leave it until its bottom gets crisp and golden brown. In a plate place that round fried noodle, add some gravy prepared earlier. Garnish with spring onions and serve hot!!</P>
-<img alt="" src="food123/maggie choupsey.JPG" width="400" height="400" class="center">
+<img alt="" src="food123/maggie choupsey.JPG"  class="center">
 </body>
 </html>
 

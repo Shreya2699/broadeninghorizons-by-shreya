@@ -5,27 +5,61 @@
 	<meta name="hello" content="page description"/>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		
-		#header {
-			background: black;
-			font-family: Arial; 
-			margin-right:20px
-			display:block;
-			
-			
-		}
+		.header {
+			  overflow: hidden;
+			  background-color:  #333;
+			  
+			}
+		.header a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: relative;}
+			  .header.responsive a.icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
+			}
+
+
 		body{
-		background: url(https://media.istockphoto.com/vectors/yellow-halftone-spotted-background-vector-id945172204?k=6&m=945172204&s=612x612&w=0&h=bP4XReoPy2UHtFXhwslYALrY4P0wNpWUas4tc_3zhaU=);
-		background-repeat:no-repeat; 
-		background-size:cover; 
-		height:100%;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		text-align:center;
-		margin-right:20px;
-		margin-left:20px
+			background: url(https://static7.depositphotos.com/1021722/690/i/600/depositphotos_6902757-stock-photo-yellow-autumn-leaves-on-background.jpg);
+			background-repeat:no-repeat; 
+			background-size:cover; 
+			height:1366px;
+			
+			text-align:center;
+		
+		}
+		
+		.center {
+		  display: block;
+		  
 		}
 		
 		
@@ -33,17 +67,28 @@
 </head>
 <body >
 
-<div id="header">
-	
-		<table width="547" border="0" cellpadding="2" cellspacing="2" align="center" style="background-color:black; display:block;">
-				<td width="96"><font color="white"><a href='shreya123.html' style="color:white">  <h3>Home</h3></a></font></td>
-				<td width="96"><font color="white"><a href='recipes.html' style="color:white">  <h3>Recipes</h3></a></font></td>
-				<td width="96"><font color="white"><a href='articles.html' style="color:white">   <h3>Articles</h3></a></font></td>
-				<td width="96"><font color="white"><a href='contact.html' style="color:white"> <h3>contact</a></h3></font></td>
-				<td width="96"><font color="white"> <a href='art gallery.html'style="color:white"><h3>Art gallery</h3></a></font></td>
-		</table>
-	
-	</div>
+<div class="header" id="myHeader">
+  
+  
+    <a href='shreya123.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
 <p><h2>Reach us at-<a href= 'broadeninghroizons26@gmail.com'>broadeninghroizons26@gmail.com</a> </p>
 <p>follow us on facebook- <a href='https://www.facebook.com/Broadening-Horizons-121495262982658'>https://www.facebook.com/Broadening-Horizons-121495262982658</a></h2>
-<img alt="" src="https://assunnahschool.co.uk/wp-content/uploads/2014/11/New-Broadening-Horizons1-1024x430-1-800x335.jpg" width="400" height="500" class="center">
+

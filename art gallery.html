@@ -5,121 +5,174 @@
 	<meta name="hello" content="page description"/>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		
-		#header {
-			background: black;
-			background-size:cover;
-			font-family: Arial; 
-			
-		}
 		
-		item{
-			  widows: 500px;
-			  text-align:center;
-			  display:inline-flex;
-			  background-color: transparent;
-			  border: 1px solid transparent;
-			  margin-right: 10px;
-			  margin-bottom: 1px;
-			 
+		
+		.header {
+			  overflow: hidden;
+			  background-color:  #333;
+			  
+			}
+		.header a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: relative;}
+			  .header.responsive a.icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
+			}
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width:50%;
+		 
 		  
 		}
-		#index-gallery{
-			width:460px;
+
+		body{
+			
+			background-repeat:no-repeat; 
+			background-size:cover; 
+			background-position:center center;
+			height:1366px;
+			
+			text-align:center;
+		
+		}
+		.item{
+			text-align:center;
 			}
+		
 		
 		
 	</style>
 	
 	
 </head>
-<body align="center" background=https://i.pinimg.com/564x/fe/08/65/fe0865da56ed5bdb6b0089b7f3116534.jpg style="background-repeat:no-repeat; background-size:cover;border:black;border-width:10px;border-style:solid; margin-right:90px; margin-left:90px; margin-top:30px; margin-bottom:30px;">
+<body align="center" background=https://i.pinimg.com/564x/fe/08/65/fe0865da56ed5bdb6b0089b7f3116534.jpg style="background-repeat:no-repeat; background-size:cover;border:black;border-width:10px;border-style:solid; margin:auto;">
 
-<div id="header">
-	
-		<table width="547" border="0" cellpadding="2" cellspacing="2" align="center">
-				<td width="96"><font color="white"><a href='shreya123.html' style="color:white">  <h3>Home</h3></a></font></td>
-				<td width="96"><font color="white"><a href='recipes.html' style="color:white">  <h3>Recipes</h3></a></font></td>
-				<td width="96"><font color="white"><a href='articles.html' style="color:white">  <h3>Articles</h3></a></font></td>
-				<td width="96"><font color="white"><a href='contact.html' style="color:white"> <h3>Contact</h3></a></font></td>
-				<td width="96"><font color="white"> <a href='art gallery.html'style="color:white"><h3>Art gallery</h3></a></font></td>
-		</table>
-	
-	</div>
+<div class="header" id="myHeader">
+  
+  
+    <a href='shreya123.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
 
 
 	<div class="item" >
 		<p><font color="white"><h3>Lord Krishna</em></h3> </font></p>
-		<img alt="" src="food123/Krishna.JPG" width="400" height="455">
+		<img alt="" src="food123/Krishna.JPG"class="center">
 		
 	</div>
 
 
 	<div class="item">
 		<p><font color="white"><h3>The Divine</em></h3> </font></p>
-		<img alt="" src="food123/harihar.JPG" width="400" height="460">		
+		<img alt="" src="food123/harihar.JPG" class="center">		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Owl</em></h3> </font></p>
-		<img alt="" src="food123/owl.JPG" width="400" height="455">
+		<img alt="" src="food123/owl.JPG" class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Krishna's Flute</em></h3> </font></p>
-		<img alt="" src="food123/krishnasflute.JPG" width="400" height="460">	
+		<img alt="" src="food123/krishnasflute.JPG" class="center">	
 		
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Round Mandala</em></h3> </font></p>
-		<img alt="" src="food123/round.JPG" width="400" height="460">
+		<img alt="" src="food123/round.JPG" class="center">
 	<div class="item" >
 		<p><font color="white"><h3>Square Mandala</em></h3> </font></p>
-		<img alt="" src="food123/square.JPG" width="400" height="460">
+		<img alt="" src="food123/square.JPG" class="center">
 		
 		
 	<div class="item" >
 		<p><font color="white"><h3>Maa Durga</em></h3> </font></p>
-		<img alt="" src="food123/durga.JPG" width="400" height="460">
+		<img alt="" src="food123/durga.JPG"  class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Parallel World</em></h3> </font></p>
-		<img alt="" src="food123/parallel.JPG" width="400" height="460">
+		<img alt="" src="food123/parallel.JPG" class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Snowy Land</em></h3> </font></p>
-		<img alt="" src="food123/snow.JPG" width="600" height="460">
+		<img alt="" src="food123/snow.JPG" class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>OM Fusion</em></h3> </font></p>
-		<img alt="" src="food123/om.JPG" width="400" height="460">
+		<img alt="" src="food123/om.JPG" class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Night Scene</em></h3> </font></p>
-		<img alt="" src="food123/moon.JPG" width="400" height="460">
+		<img alt="" src="food123/moon.JPG"class="center">
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>3D Hearts</em></h3> </font></p>
-		<img alt="" src="food123/heart.JPG" width="400" height="460">
+		<img alt="" src="food123/heart.JPG"class="center" >
 		
 		
 	</div>
 	<div class="item" >
 		<p><font color="white"><h3>Trapped Butterfly</em></h3> </font></p>
-		<img alt="" src="food123/bulb.JPG" width="400" height="460">
+		<img alt="" src="food123/bulb.JPG" class="center">
 		
 		
 	</div

@@ -5,27 +5,64 @@
 	<meta name="hello" content="page description"/>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		
-		#header {
-			background: black;
-			font-family: Arial; 
-			margin-right:20px
-			display:block;
-			
-			
+		.header {
+			  overflow: hidden;
+			  background-color:  #333;
+			  
+			}
+		.header a {
+			  float: left;
+			  display: block;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: relative;}
+			  .header.responsive a.icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
+			}
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width:auto;
+		 
+		  
 		}
+
 		body{
-		background: url(https://static7.depositphotos.com/1021722/690/i/600/depositphotos_6902757-stock-photo-yellow-autumn-leaves-on-background.jpg);
-		background-repeat:no-repeat; 
-		background-size:cover; 
-		height:100%;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		text-align:center;
-		margin-right:20px;
-		margin-left:20px
+			background: url(https://static7.depositphotos.com/1021722/690/i/600/depositphotos_6902757-stock-photo-yellow-autumn-leaves-on-background.jpg);
+			background-repeat:no-repeat; 
+			background-size:cover; 
+			background-position:center center;
+			height:1366px;
+			
+			text-align:center;
+		
 		}
 		
 		
@@ -33,17 +70,28 @@
 </head>
 <body >
 
-<div id="header">
-	
-		<table width="547" border="0" cellpadding="2" cellspacing="2" align="center" style="background-color:black; display:block;">
-				<td width="96"><font color="white"><a href='shreya123.html' style="color:white">  <h3>Home</h3></a></font></td>
-				<td width="96"><font color="white"><a href='recipes.html' style="color:white">  <h3>Recipes</h3></a></font></td>
-				<td width="96"><font color="white"><a href='articles.html' style="color:white">   <h3>Articles</h3></a></font></td>
-				<td width="96"><font color="white"><a href='contact.html' style="color:white"> <h3>Contact</h3></a></font></td>
-				<td width="96"><font color="white"> <a href='art gallery.html'style="color:white"><h3>Art gallery</h3></a></font></td>
-		</table>
-	
-	</div>
+<div class="header" id="myHeader">
+  
+  
+    <a href='shreya123.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
 <h1 align="center"><font color="white"> WELCOME TO BROADENING HORIZONS</font> </h1>
 <p><em><h3><font color="white">Get Creative!!</font><h3></em></p>
 </p> <h3><font color="white">Hey Guys!!,
@@ -55,7 +103,7 @@ This is Shreya welcoming you to my amazing site.....Broadening Horizons.<br>Expl
 
 </p>
 
-	<iframe src="https://drive.google.com/file/d/1BiPzZ1zCXV5Le_kf4X36lffW2_WKyWyI/preview" width="500" height="300"></iframe>
+	<iframe src="https://drive.google.com/file/d/1BiPzZ1zCXV5Le_kf4X36lffW2_WKyWyI/preview"  class="center"></iframe>
 	
 </video>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp

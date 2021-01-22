@@ -10,13 +10,13 @@
 		
 		.header {
 			  overflow: hidden;
-			  background-color:  #333;
+			  background-color:  black;
 			  
 			}
 		.header a {
 			  float: left;
 			  display: block;
-			  color: #f2f2f2;
+			  color:white;
 			  text-align: center;
 			  padding: 14px 16px;
 			  text-decoration: none;
@@ -25,11 +25,24 @@
 		.header .icon {
 				display: none;
 			}
+		.recent{
+			display: flex;
+			
+			padding-left: 10%;
+			padding-right: 10%;
+			}
+		.items{
+			
+			display:block;
+			text-align: left;
+			width:60%;
+			}
 		@media screen and (max-width: 600px) {
 			  .header a:not(:first-child) {display: none;}
 			  .header a.icon {
 					float: right;
 					display: block;
+					
 			  }
 			}
 		@media screen and (max-width: 600px) {
@@ -45,13 +58,26 @@
 					text-align: left;
 			  }
 			}
+			@media screen and (max-width: 600px) {
+				.recent{
+					
+					  display: flex;					  
+					  }
+			}
+		
+		
 		.center {
 		  display: block;
 		  margin-left: auto;
 		  margin-right: auto;
-		  width:auto;
+		  
 		 
 		  
+		}
+		.image {
+		  margin-left: auto;
+		  margin-right: auto;
+		  width:50%;		  
 		}
 
 		body{
@@ -61,9 +87,10 @@
 			background-position:center center;
 			height:1366px;
 			
-			text-align:center;
+			
 		
 		}
+	
 		
 		
 	</style>
@@ -93,8 +120,8 @@ function myFunction() {
 }
 </script>
 <h1 align="center"><font color="white"> WELCOME TO BROADENING HORIZONS</font> </h1>
-<p><em><h3><font color="white">Get Creative!!</font><h3></em></p>
-</p> <h3><font color="white">Hey Guys!!,
+<p ><em><h3 align="center"><font color="white">Get Creative!!</font><h3></em></p>
+</p> <h3 align="center"><font color="white">Hey Guys!!,
 
 This is Shreya welcoming you to my amazing site.....Broadening Horizons.<br>Explore our blog containing interesting articles and lip-smacking recipes.<br>Peep through the art gallery to find some of my cute creations.
 
@@ -103,13 +130,36 @@ This is Shreya welcoming you to my amazing site.....Broadening Horizons.<br>Expl
 
 </p>
 
-	<iframe src="https://drive.google.com/file/d/1BiPzZ1zCXV5Le_kf4X36lffW2_WKyWyI/preview"  class="center"></iframe>
+	<iframe src="https://drive.google.com/file/d/1BiPzZ1zCXV5Le_kf4X36lffW2_WKyWyI/preview"   height="50%" class="center"></iframe>
 	
 </video>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
 <p>
 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-</p>	
+</p>
+<p align="left" style="padding-left:10%"><font color="white"> Recent  Post....</P></font>
+<div class="recent">
+	<div class="items">
+		
+		<p  ><font color="white"><a href='live or exist.html' style="color:white">You Live Or Exist</a> </font></p>
+		<img alt="" src="food123/l1.JPG" align="left" class="image ">	
+				
+	</div>
+	<div class="items">
+		
+		
+		<p><font color="white"><a href='bali prawns.html' style="color:white">Bali Prawns</a> </font></p>
+		<img alt="" src="food123/bali prawns.JPG"class="image">
+		
+	</div>
+	<div class="items">
+		
+		<p><font color="white"><a href='art gallery.html' style="color:white">Lord Krishna</a></font></p>
+		<img alt="" src="food123/Krishna.JPG"class="image">	
+		
+	</div>
+</div>
+
 </body>
 </html>
 		

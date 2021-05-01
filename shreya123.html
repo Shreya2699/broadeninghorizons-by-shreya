@@ -55,16 +55,20 @@
 			display: flex;
 			justify-content: space-around;
 			flex-direction: row;
-			padding-left: 2rem;
+			padding: 30px;
+			flex-wrap: wrap;
+			
 			
 			
 			}
 		.r1{
-			background-image: url(https://t3.ftcdn.net/jpg/02/74/78/46/360_F_274784656_0NUDmLvAVwZRdgYMNdrXMgGQlQ9vF6H6.jpg);
+			background-image: url(https://media.istockphoto.com/videos/beautiful-white-hexagons-on-surface-morphing-in-seamless-3d-animation-video-id966407426?s=640x640);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			height:680px;
+			height:1550px;
+			
+		
 		}
 		.items{
 			
@@ -136,7 +140,7 @@
 			font-weight: bold;
 			padding: 0.4rem;
 			text-align: center;
-			padding-top: 80px;
+			padding-top: 120px;
 		}
 		.message{
 			color:#1f1f86;
@@ -155,7 +159,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			height:680px;
+			height:1550px;
 			align-items: center;
 		}
 		#btn{
@@ -180,8 +184,26 @@
 			background-repeat: no-repeat;
 			margin:0px;
 			padding:0px;
-			height:680px;
+			height:1550px;
 		}
+		.site-content > .sidebar .category-list{
+    font-family: var(--Livvic);   
+}
+
+.site-content > .sidebar .category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content > .sidebar .category-list .list-items a{
+    color:  black;
+}
+
 	
 		
 		
@@ -221,7 +243,7 @@ function myFunction() {
 		</div>
 		<div  class="new">
 		<p ><em><h3 align="center"><font color="white"></font><div class="new"> Get Ready For A Tinge Of Creativity!!<br>
-			<div class="btn1"><a href="#about"><button type="button" class="btn btn-light" id="btn">About</button></a><a href="#recent"><button type="button" class="btn btn-light" id="btn">Recent</button></a></div></div></font><h3></em></p></div>
+			<div class="btn1"><a href="#about"><button type="button" class="btn btn-light" id="btn">About</button></a><a href="#recent"><button type="button" class="btn btn-light" id="btn">Explore</button></a></div></div></font><h3></em></p></div>
 			
 		
 		<!-- <p><h3 align="center"><font color="white"><div class="message">Hey Guys!!,
@@ -241,26 +263,31 @@ function myFunction() {
 <div class="r1" id="recent">
 	<p align="center"><div class="heading" >Recent  Post....</P></div>
 	<div class="recent">
-		<div class="items">
-			
-			<p  ><font color="white"><h5></font><a href='live or exist.html' style="color:black">You Live Or Exist</a> </font></p>
-			<img alt="" src="food123/l1.JPG" align="left" class="image "></h5>
-			
-					
-		</div>
-		<div class="items">
-			
-			
-			<p><h5><font color="white"><a href='bali prawns.html' style="color:black">Bali Prawns</a> </font></p>
-			<img alt="" src="food123/bali prawns.JPG"class="image"></h5>
-			
-		</div>
-		<div class="items">
-			
-			<p><h5><font color="white"><a href='art gallery.html' style="color:black">Lord Krishna</a></font></p>
-			<img alt="" src="food123/Krishna.JPG"class="image">	</h5>
-			
-		</div>
+		<div class="card" style="width: 18rem;">
+			<img src="food123/l1.JPG" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Live or Exist</h5>
+			  <p class="card-text">et's begin by quoting some golden words by Oscar Wilde, "To live is the rarest thing in the world,</p>
+			  <a href="live or exist.html" class="btn btn-primary">Read Now</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="food123/bali prawns.JPG" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Bali Prawns</h5>
+			  <p class="card-text">Prawns, a yummy  seafood has always attracted the taste buds of foodies. Be it in the form of</p>
+			  <a href="bali prawns.html" class="btn btn-primary">Read Now</a>
+			</div>
+		  </div>
+		  <div class="card" style="width: 18rem;">
+			<img src="food123/krishnasflute.JPG" height="250px" class="card-img-top" alt="...">
+			<div class="card-body">
+			  <h5 class="card-title">Krishna's Flute</h5>
+			  <p class="card-text">A Beautiful Mandala Art of krishna's flute</p>
+			  <a href="bali prawns.html" class="btn btn-primary">Check Now</a>
+			</div>
+		  </div>
+		  
 	</div>
 </div>
 

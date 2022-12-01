@@ -208,6 +208,67 @@
 			align-items: center;
 			padding:40px;
 		}
+		.card {
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #b0215e;
+  margin-bottom: 20px;
+  background-image: url('https://images.unsplash.com/photo-1516051662687-567d7c4e8f6a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80');
+    background-size: cover;
+  
+  @include media {
+    height: 500px;
+  }
+}
+
+.inner {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background: white;
+  box-sizing: border-box;
+  padding: 40px;
+  
+  @include media {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.title {
+  font-size: 24px;
+  color: black;  
+  text-align: center;
+  font-weight: 700;
+  color: #181818;
+  text-shadow: 0px 2px 2px #a6f8d5;
+  position: relative;
+  margin: 0 0 20px 0;
+  
+  @include media {
+    font-size: 30px;
+  }
+}
+
+.subtitle {
+  color: #b0215e;
+  text-align: center;
+}
+
+.card2 {
+  background-image: url('https://images.unsplash.com/photo-1496317556649-f930d733eea3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
+
+.card3 {
+  background-image: url('https://images.unsplash.com/photo-1557576842-3bc6093a5085?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+}
 		#more {display: none;}
 		.about{
 			color:white;
@@ -323,8 +384,30 @@ function myFunction() {
 		
 		
 </div>
-	<div
-		<div class="recent" style="position:relative;">
+	<div>
+		<main>
+  <a href="https://google.com" class="card">
+      <div class="inner">
+        <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+        <time class="subtitle">03. März 2021<time>
+      </div>
+  </a>
+        
+  <a href="https://google.com" class="card card2">
+      <div class="inner">
+        <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+        <time class="subtitle">03. März 2021<time>
+      </div>
+  </a>
+
+  <a href="https://google.com" class="card card3">
+      <div class="inner">
+        <h2 class="title">Mit 117 Sachen durch Klugheimschen Basaltgebirge</h2>
+        <time class="subtitle">03. März 2021<time>
+      </div>
+  </a>
+<main>
+
 		<div class="" style="width: 18rem;position: relative;">
 			<img src="food123/l1.JPG" class="card-img-top" alt="...">
 			<div class="card-body">

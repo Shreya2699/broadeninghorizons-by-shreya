@@ -105,40 +105,86 @@ function myFunction() {
     x.className = "header";
   }
 }
-<script>
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbz25IQsl9E5Qql9HD3BMvP89R6YUTIhEd6-7YBB9FKrg-O22oKpLXPKkFpGyDi0f2Eu/exec'
-			const form = document.forms['formName']
-		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Thank you! your form is submitted successfully." ))
-				.then(() => {  window.location.reload(); })
-				.catch(error => console.error('Error!', error.message))
-			})
-		  </script>
-	<div style="padding-top:150px;border:10px solid; height:300px;width: 250px;text-align: center;left:50%;"> 
-<form method="post" action="https://script.google.com/macros/s/AKfycbz25IQsl9E5Qql9HD3BMvP89R6YUTIhEd6-7YBB9FKrg-O22oKpLXPKkFpGyDi0f2Eu/exec" name="contactform" id="contactform">
-  <div class="form-row">
-    <div class="form-group col-md-6" style="padding:5px;">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" name="Email" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6"style="padding:5px;">
-      <label for="inputPassword4">Number</label>
-      <input type="number" name="Number" class="form-control" id="inputPassword4" placeholder="Number">
-    </div>
+<div class="service-heading" style="padding-top:80px; font-size:80px;">
+                            Book Now
+                     </div>
+					 <div class="contact">
+					 <form method="post" autocomplete="off" name="google-sheet">
+                     <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Name</label>
+                        <input name="Name" type="text" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input name="Email address" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                      <input name="Phone Number" type="number" class="form-control" id="exampleInputPassword1">
+                    </div>
+					<div class="mb-8 ">
+                        <label for="packages" class="form-label">Choose package</label>
+                        <select id="packages" name="Choose package">
+							<option value="Italy">Italy</option>
+							<option value="Saudi">Saudi</option>
+							<option value="France">France</option>
+							<option value="England">England</option>
+						  </select>
+						
+                      </div>
+					  <div class="mb-8 ">
+                        <label for="exampleInputPassword1" class="form-label">No of people</label>
+                        <input name="No of people"type="number" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    <div class="mb-8 ">
+                        <label for="exampleInputPassword1" class="form-label">Date of arrival</label>
+                        <input name="Date of arrival"type="date" class="form-control" id="exampleInputPassword1">
+                      </div>
+					<div class="mb-8 ">
+                        <label for="exampleInputPassword1" class="form-label">Date of departure</label>
+                        <input type="date" name="Date of departure" class="form-control" id="exampleInputPassword1">
+                      </div>
+					  
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                   <!--<input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" /> -->
+				   <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                  </form></div></div></div></div>
+				  <script src="https://smtpjs.com/v3/smtp.js">
+					</script>
+				  <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyageSb-anjd97QUAxGg9drFkSKZ8bQo1WjCWUc5-31GFq_2feaEHmaDSjlvykER8CV/exec'
+            const form = document.forms['google-sheet']
+			var book=document.getElementById("book");
+			var thanks=document.getElementById("thanks");
+			var recipient=document.getElementById("exampleInputEmail1");
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => book.style.display="none",
+									thanks.style.display="block"
+									
+									 
+				)
+                .catch(error => console.error('Error!', error.message))
+            })
+			
+			
+          </script>
+
+  </script>
   </div>
-  <div class="form-group"style="padding:5px;">
-    <label for="inputAddress">Name</label>
-    <input type="text"  name="Name" class="form-control" id="inputAddress" placeholder="Name">
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <input class="form-check-input"  type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        I would like to subscribe to the newsletter      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-		</form></div>
+        <div id="thanks" class="thanks">THANK YOU FOR CONTACTING<br>
+            <button type="button" class="btn btn-dark"><a href="index.html"class="btn-2"  target="_self">Back</button></a>
+        </div>
+<div id="book">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+      <div style="text-align:center;padding:20px">Copyrights @Shreya Agasti</div> 
+    </body>
+</html>

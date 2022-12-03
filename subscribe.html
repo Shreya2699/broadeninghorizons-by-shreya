@@ -2,11 +2,32 @@
 <html>
 <head>
 	<title>shreya's blog</title>
+	<script src=”https://code.jquery.com/jquery-3.4.1.js" integrity=”sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=” crossorigin=”anonymous”>
+</script>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/t2vhWiL9CH0zX51l/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 	<meta name="hello" content="page description"/>
 	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="p:domain_verify" content="ac4c42f310cb48116e478557f027c8a2"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 	<style type="text/css">
 		*{
 			margin: 0px;

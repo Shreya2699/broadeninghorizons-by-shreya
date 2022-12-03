@@ -105,21 +105,27 @@ function myFunction() {
     x.className = "header";
   }
 }
-</script>
-	<script>
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/t2vhWiL9CH0zX51l/',
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          alert("Form Data Submitted :)")
-        },
-        error: function(){
-          alert("There was an error :(")
-        }
-    });
-}
+<script>
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbyFOGKK7CnuTV8VUAEF8hgI8Kl4HhRo8o_ihVnjzWhDBmbtvBoVB6qg3zJ1cRqO4xJY/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
 </script>
 	<div style="padding-top:150px;border:10px solid; height:300px;width: 250px;text-align: center;left:50%;"> 
 <form>

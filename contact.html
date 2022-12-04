@@ -115,7 +115,8 @@ function myFunction() {
                             Book Now
                      </div>
 					 <div class="contact">
-					 <form id="demo" method="post" autocomplete="off" name="google-sheet">
+					 <form  method="post" autocomplete="off" name="google-sheet">
+						 <div id="demo">
                      <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Name</label>
                         <input name="Name" type="text" class="form-control" id="exampleInputPassword1">
@@ -138,7 +139,7 @@ function myFunction() {
                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
                    <!--<input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" /> -->
-				   <button  onclick="myFunction123()" name="submit" type="submit" class="btn btn-primary">Submit</button>
+				   <button  onclick="myFunction123()" name="submit" type="submit" class="btn btn-primary">Submit</button></div>
                   </form></div></div></div></div>
 				  <script src="https://smtpjs.com/v3/smtp.js">
 					</script>
@@ -158,11 +159,17 @@ function myFunction() {
 				)
                 .catch(error => console.error('Error!', error.message))
             })
+					  
 			
 			
           </script>
 
   </script>
+<script>
+function myFunction123() {
+  document.getElementById("demo").innerHTML = "I have changed!";
+}
+</script>
 
   </div>
         <div id="thanks" class="thanks">THANK YOU FOR CONTACTING<br>

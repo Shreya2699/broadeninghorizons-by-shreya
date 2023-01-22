@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How Computers Talk- A postoffice analogy</title>
+	<meta name="hello" content="page description"/>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body{
+			
+			background-position:center center;
+			background-color:#f4c3c6;
+			text-align:justify;
+			
+			
+	
+		
+		}
+		
+		.header {
+			  overflow: hidden;
+			  background-color:#303952;
+			  padding:0.5rem;
+			  position:fixed;
+			  width:100%;
+			  
+			}
+		.header a {
+				display:flex;
+				float:left;
+			
+			  color:white;
+			  
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 1.2rem;
+			  font-weight: bolder;
+			  font-family: 'Roboto', sans-serif;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: fixed;}
+			  .header.responsive a.icon {
+					position: fixed;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
+			}
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
+		}
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		.bod1{
+			padding:40px;
+		}
+	</style>
+</head>
+<body   style="background-repeat:no-repeat; background-size:cover;">
+<div class="header" id="myHeader">
+  
+  
+    <a href='index.html' style="color:white"  class="active">Home</a>
+    <a href='contact.html' style="color:white">Contact</a>
+    <a href='recipes.html' style="color:white">Lifestyle</a>
+	<a href='articles.html' style="color:white">Articles</a>
+	<a href='art gallery.html'style="color:white">Art gallery</a>
+	<a href='subscribe.html'style="color:white">Subscribe</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
+
+<h1 style="text-align:center; padding-top:70px;">How Computers Talk- A postoffice analogy<br>
+<h4 style="text-align:center;"><em>By Shreya</em><h4>
+<div class="bod1">
+<h3 ><p>Communication has become one of the most important traits of the modern world. It&apos;s the proper delivery of the message between 2 &nbsp;people or entities which has turned the world into a nutshell. Humans have developed various modes of communication to deliver their messages to their near and dear ones. Starting from passenger pigeons to postcards we have seen many forms of communication. But have you ever wondered how two computers communicate?</p>
+<p>Let&apos;s discuss an analogy between our traditional postal system and the communication between computers which in other words is called computer networking. The computers use TCP/IP protocol to communicate with other computers. As the postal system is divided into different parts or entities similarly the TCP/IP protocol is divided into 5 layers. So let&apos;s look at the analogy!</p>
+<ol>
+    <li>Application layer - In the case of a postal system the first step is the sender writes a message on a piece of paper, puts the address on it and drops it in the post box. In this layer, a particular application writes a message for a destination application and sends it to the next layer.</li>
+    <li>Transport Layer - In case the address written on the envelope is wrong the post office stamps it as an &quot;unknown address&quot; and sends it back to the sender. Similarly, in the case of computers, the transport layer checks if the destination exists and is willing to accept the message.</li>
+    <li>Network Layer - The letter is next sent by road or airways to the post office of the receiver&apos;s city. This Layer in the case of computers also sends the message from the source network to the destination network via routers.</li>
+    <li>Data Link Layer - This is similar to the delivery of letters by the postman inside the city to particular addresses. In the case of computers, the most commonly used protocol in the data link layer is the ethernet protocol and it sends data using switches within the same network.</li>
+    <li>Physical Layer - The receiving of the letter by the receiver and reading it is similar to the function of the physical layer. In this layer, the destination application receives the messages and decrypts them.</li>
+</ol>
+<p>Easy right? This is how we can relate our traditional postal service system to TCP/IP protocol for computer networking. However, in the case of the traditional postal system, there were many inefficiencies like the threat of message being read by anyone or not being delivered deliberately which was overcome to a large extent by the TCP/IP protocol.</p>
+<p><br></p>
+<img alt="" src="food123/f1.JPG" class="center">
+
+</P></h3>
+
+</div>
+</body>

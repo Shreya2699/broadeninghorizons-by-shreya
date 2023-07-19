@@ -8,14 +8,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
 		
-			*{
-				margin: 0px;
-				padding: 0px;
-			}
 			body{
 			
 			background-position:center center;
-			background-color:#f4c3c6;
+			background-color:#F6F2E4;
 			text-align:justify;
 			
 			
@@ -54,9 +50,9 @@
 			  }
 			}
 		@media screen and (max-width: 600px) {
-			  .header.responsive {position: relative;}
+			  .header.responsive {position: fixed;}
 			  .header.responsive a.icon {
-					position: absolute;
+					position: fixed;
 					right: 0;
 					top: 0;
 				}
@@ -71,10 +67,28 @@
 		  margin-left: auto;
 		  margin-right: auto;
 		  width: 50%;
-		  padding:10px;
 		}
-		.cen{
-			align-items: center;
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.bod1{
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.form-container{
+			text-align: center;
+		}
+		.heading1{
+			font-family: cursive;
+			font-size: 1.4rem;
+			
+			
+			color:#FBE4A9;
+			
+			
 		}
 		
 	</style>
@@ -83,15 +97,21 @@
 <div class="header" id="myHeader">
   
   
-    <a href='index.html' style="color:white"  class="active">Home</a>
-    <a href='contact.html' style="color:white">Contact</a>
+    <a href='index.html'  style="color:white">
+			<span class="heading1">Broadening Horizons</span>
+		</a>
+    <a href='articles.html' style="color:white">Lifestyle</a>
     <a href='recipes.html' style="color:white">Recipes</a>
-	<a href='articles.html' style="color:white">Lifestyle</a>
-	<a href='art gallery.html'style="color:white">Art gallery</a>
+	
+	<a href='articles.html' style="color:white">Technology</a>
+	
+	<a href='art gallery.html'style="color: white">Art gallery</a>
+	<a href='contact.html' style="color:white">Contact</a>
 	<a href='subscribe.html'style="color:white">Subscribe</a>
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
   </a>
+  
 </div>
 <script>
 function myFunction() {
@@ -106,7 +126,7 @@ function myFunction() {
 
 
 <div style="padding:10px">
-	<h1 style="text-align:center;  padding-top:70px;">Bali Prawns<br>
+	<h1 style="text-align:center;  padding-top:80px;">Bali Prawns<br>
 <h4 style="text-align:center;"><em>By Shreya</em><h4>
 <p><h3>Prawns, a yummy  seafood has always attracted the taste buds of foodies. Be it in the form of snacks or curry has always been a drooling dish. As the monsoon is around I thought of sharing with you two yummy prawn snacks-Bali prawn and Prawn cutlet. So put ur aprons on and get ready to cook something really delicious!! </p>
 
@@ -151,5 +171,13 @@ Bali Prawns
 	<iframe   src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBroadening-Horizons-121495262982658&width=20px&layout=standard&action=like&size=small&share=true&height=35&appId" width="110px" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 </div>
 </div>
+	<div class="commentbox"></div>
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>commentBox('my-project-id')</script>
+<footer style="background-color:#3C2D80;color:white;padding:10px;text-align:center;margin-top:10px;padding-bottom:50px;">
+    <div style="padding:10px">Come for the blog, stay for the creativity.
+Welcome! Broadening Horizons is a creativity blog. We cover everything from Recipes to Technology to Lifestyle to Art, and we strive to be authentic. As Olive Kitteridge said, “There’s no such thing as a simple life.” Thank you for reading. 
+	</div><hr></hr><div style="padding:20px">ALL MATERIALS COPYRIGHT @SHREYA AGASTI</div>
+</body>
 </body>
 </html>

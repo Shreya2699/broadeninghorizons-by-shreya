@@ -15,14 +15,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"></head>
 	<style type="text/css">
-		*{
-			margin: 0px;
-			padding: 0px;
-		}
 		body{
 			
 			background-position:center center;
-			background-color:#f4c3c6;
+			background-color:#F6F2E4;
 			text-align:justify;
 			
 			
@@ -48,7 +44,7 @@
 			  text-decoration: none;
 			  font-size: 1.2rem;
 			  font-weight: bolder;
-			  font-family:  sans-serif;
+			  font-family: 'Roboto', sans-serif;
 			}
 		.header .icon {
 				display: none;
@@ -73,17 +69,34 @@
 					text-align: left;
 			  }
 			}
-		
-		body{
-			
-			background-position:center center;
-			height:1366px;
-			text-align:center;
-			
-		
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
 		}
-		
-		
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.bod1{
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.form-container{
+			text-align: center;
+		}
+		.heading1{
+			font-family: cursive;
+			font-size: 1.4rem;
+			
+			
+			color:#FBE4A9;
+			
+			
+		}
 		
 	</style>
 </head>
@@ -92,15 +105,21 @@
 <div class="header" id="myHeader">
   
   
-    <a href='index.html' style="color:white"  class="active">Home</a>
-    <a href='contact.html' style="color:white">Contact</a>
+    <a href='index.html'  style="color:white">
+			<span class="heading1">Broadening Horizons</span>
+		</a>
+    <a href='articles.html' style="color:white">Lifestyle</a>
     <a href='recipes.html' style="color:white">Recipes</a>
-	<a href='articles.html' style="color:white">Lifestyle</a>
-	<a href='art gallery.html'style="color:white">Art gallery</a>
+	
+	<a href='articles.html' style="color:white">Technology</a>
+	
+	<a href='art gallery.html'style="color: white">Art gallery</a>
+	<a href='contact.html' style="color:white">Contact</a>
 	<a href='subscribe.html'style="color:white">Subscribe</a>
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
   </a>
+  
 </div>
 <script>
 function myFunction() {
@@ -111,7 +130,7 @@ function myFunction() {
     x.className = "header";
   }
 }</script>
-<div class="service-heading" style="padding-top:70px; font-size:80px;">
+<div class="service-heading" style="padding-top:80px; font-size:80px;">
                             Contact
                      </div>
 					 <div class="contact" style="margin:60px;text-align:left;">

@@ -10,7 +10,7 @@
 		body{
 			
 			background-position:center center;
-			background-color:#f4c3c6;
+			background-color:#F6F2E4;
 			text-align:justify;
 			
 			
@@ -68,11 +68,26 @@
 		  width: 50%;
 		}
 		*{
-			padding:0px;
-			margin:0px;
+			margin: 0px;
+			padding: 0px;
 		}
 		.bod1{
-			padding:40px;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.form-container{
+			text-align: center;
+		}
+		.heading1{
+			font-family: cursive;
+			font-size: 1.4rem;
+			
+			
+			color:#FBE4A9;
+			
+			
 		}
 	</style>
 </head>
@@ -80,15 +95,21 @@
 <div class="header" id="myHeader">
   
   
-    <a href='index.html' style="color:white"  class="active">Home</a>
-    <a href='contact.html' style="color:white">Contact</a>
-    <a href='recipes.html' style="color:white">Lifestyle</a>
-	<a href='articles.html' style="color:white">Articles</a>
-	<a href='art gallery.html'style="color:white">Art gallery</a>
+    <a href='index.html'  style="color:white">
+			<span class="heading1">Broadening Horizons</span>
+		</a>
+    <a href='articles.html' style="color:white">Lifestyle</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	
+	<a href='technology.html' style="color:white">Technology</a>
+	
+	<a href='art gallery.html'style="color: white">Art gallery</a>
+	<a href='contact.html' style="color:white">Contact</a>
 	<a href='subscribe.html'style="color:white">Subscribe</a>
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
   </a>
+  
 </div>
 <script>
 function myFunction() {
@@ -101,8 +122,8 @@ function myFunction() {
 }
 </script>
 
-<h1 style="text-align:center; padding-top:70px;">How Computers Talk- A postoffice analogy<br>
-<h4 style="text-align:center;"><em>By Shreya</em><h4>
+<h1 style="text-align:center; padding-top:80px;">How Computers Talk- A postoffice analogy<br>
+<h4 style="text-align:center;"><em>By Shreya</em></h4>
 <div class="bod1">
 <h3 ><p>Communication has become one of the most important traits of the modern world. It&apos;s the proper delivery of the message between 2 &nbsp;people or entities which has turned the world into a nutshell. Humans have developed various modes of communication to deliver their messages to their near and dear ones. Starting from passenger pigeons to postcards we have seen many forms of communication. But have you ever wondered how two computers communicate?</p>
 <img alt="" src="Untitled design.jpg" class="center">
@@ -121,4 +142,11 @@ function myFunction() {
 </P></h3>
 
 </div>
+	<div class="commentbox"></div>
+<script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+<script>commentBox('my-project-id')</script>
+<footer style="background-color:#3C2D80;color:white;padding:10px;text-align:center;margin-top:10px;padding-bottom:50px;">
+    <div style="padding:10px">Come for the blog, stay for the creativity.
+Welcome! Broadening Horizons is a creativity blog. We cover everything from Recipes to Technology to Lifestyle to Art, and we strive to be authentic. As Olive Kitteridge said, “There’s no such thing as a simple life.” Thank you for reading. 
+	</div><hr></hr><div style="padding:20px">ALL MATERIALS COPYRIGHT @SHREYA AGASTI</div>
 </body>

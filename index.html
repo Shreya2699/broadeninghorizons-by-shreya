@@ -49,7 +49,9 @@
 			}
 		.header a {
 				display:flex;
-				float:left;
+				float: left;
+				justify-content: space-evenly;
+				flex-direction: column;
 			
 			  color:white;
 			  
@@ -135,7 +137,7 @@
 		}
 
 		body{
-			background:#f4c3c6;
+			background:#F6F2E4;;
 			
 			background-repeat:no-repeat; 
 			background-size:cover; 
@@ -149,23 +151,15 @@
 		}
 		
 		.heading1{
-			font-family: 'Parisienne', cursive;
-			font-size: 4.2rem;
-			font-weight: bold;
-			padding: 0.1rem;
-			color:Black;
-			text-align: center;
-			padding-top: 120px;
-		}
-		.heading{
-			font-family: 'Parisienne', cursive;
-			font-size: 4.2rem;
-			font-weight: bold;
-			padding: 0.1rem;
-			color:Black;
-			text-align: center;
+			font-family: cursive;
+			font-size: 1.4rem;
+			
+			
+			color:#FBE4A9;
+			
 			
 		}
+		
 		.message{
 			color:#1f1f86;
 			font-size: smaller;
@@ -288,7 +282,7 @@
 	}
 	.round-image{
 		
-		overflow:hidden;
+		
 		
 		width:100%;
 		height:auto;
@@ -298,31 +292,27 @@
 
 	.c2{
 		display:block;
+		
 	}
 	.c1{
 	display:flex;
-	background-color: #f8c291;
+	background-color: #f4c3c6;
 	font-family: 'Signika', sans-serif;
 	font-weight: bold;
 	color:#6D214F;
 	flex-direction: row;
+	width:300px;
 	
-	width:410px;
-		margin-left:50px;
+
 	
-		margin:5px;
+	
+		
+	
 		
 	
 	
 
 	
-}
-		.center1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 18px;
 }
 		#login-container {
   height: 400px;
@@ -347,6 +337,31 @@ a:link {
 	  color:white;
   }
 		}  
+.cont1{
+align-items:center;
+width:50%
+height:450px;
+margin:5px;
+
+
+
+
+}
+.im1{
+width:100%;
+height:350px;
+
+
+}
+.mes1{
+width:
+height:450px;
+}
+a {
+  color: black;
+  text-decoration:None;
+  text-align:center;
+}
 		
 		
 	</style>
@@ -356,11 +371,16 @@ a:link {
 <div class="header" id="myHeader">
   
   
-    <a href='index.html' style="color:white"  class="active">Home</a>
-    <a href='contact.html' style="color:white">Contact</a>
+    <a href='index.html'  style="color:white">
+			<span class="heading1">Broadening Horizons</span>
+		</a>
+    <a href='articles.html' style="color:white">Lifestyle</a>
     <a href='recipes.html' style="color:white">Recipes</a>
-	<a href='articles.html' style="color:white">Lifestyle</a>
+	
+	<a href='articles.html' style="color:white">Technology</a>
+	
 	<a href='art gallery.html'style="color: white">Art gallery</a>
+	<a href='contact.html' style="color:white">Contact</a>
 	<a href='subscribe.html'style="color:white">Subscribe</a>
 	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
@@ -379,53 +399,40 @@ function myFunction() {
 }
 </script>
 
-<div class="div123">
-		<div  class="heading1" >
-			Broadening Horizons
-		</div>
+		
 		
 		
 		
 		
 </div><div style="display:flex;justify-content:space-evenly;flex-wrap:wrap;">
 	
-	<div style="display:block;">
-		<div class="c1">
-		
-			<div class="c2">
-			<div class="round-image1">
-				<a href="recipes.html"><img class="round-image" src="Recipes.png"  alt=""></a>
-			</div>
-			
-		
-		</div>
-	</div>
+<div style="display:block;margin-top:100px;padding:0px;">
 
-	<div class="c1">
-		<div class="c2">
-			
-			<div class="round-image1">
-				<a href="articles.html"><img class="round-image" src="Recipes (1).png" alt="">
-				
-			</div>
-			
-		
+		<div class="cont1">
+	         <img class="im1" src="https://shreya2699.github.io/broadeninghorizons-by-shreya/food123/M1.JPG" alt="">
+			 <a href="article.html"><p style="text-align:center;padding-top:5px;">LIFESTYLE</p></a>
+			 <a href="Meditative Doodling"> <H2 style="text-align:center">Meditative Doodling</H2>
+			 <span class="mes1"><p>Ever tried putting a pen to paper and just scribbling patterns aimlessly...</p></a>
+			 </span>
 		</div>
-	</div>
-		<div class="c1">
-		<div class="c2">
-			
-			<div class="round-image1">
-				<a href="art gallery.html"><img class="round-image" src="Recipes (2).png" alt=""></a>
-				
-			</div>
-			
-		
+		<div class="cont1">
+	         <img class="im1" src="https://shreya2699.github.io/broadeninghorizons-by-shreya/c92239a5065d40ce37c3d71d16b752c0.jpg" alt="">
+							<a href="recipes.html"> <p style="text-align:center;padding-top:5px;">FOOD</p></a>
+			 <a href="papaya.html"><H2 style="text-align:center">Papaya Icecream</H2>
+			 <p style="text-align:center">Who doesn't love some creamy ice cream for dessert?....</p></a>
+			 
 		</div>
-	</div>
+		
+		<div class="cont1">
+	         <img class="im1" src="https://i.pinimg.com/564x/0d/ee/9d/0dee9dfc5aa3f444bf5a21b57e10f364.jpg" alt="">
+					 <a href="art.html"><p style="text-align:center">ART</p>
+			 <H2 style="text-align:center;padding-top:5px;">Mandala</H2>
+			 <span class="mes1"><p style="text-align:center">Peep into my art gallery for some amazing stuff...</p></a>
+			 </span>
+		</div>
 	
 	</div>
-	<div style="display:block;"><div>
+	<div style="display:block;margin-top:100px;"><div>
 	<div style=" height: auto;
   width: 350px;
   padding: 20px;
@@ -449,9 +456,9 @@ function myFunction() {
   </footer>
 </div></div>
 	<div >
-	<div style="background:#E8E8E8;padding:10px; margin:10px;" >
+	<div style="padding:10px; margin:10px;" >
 
-  <h1>
+  <h1 style="text-align:center"> 
     Recent Post
   </h1>  <div class="description"  >
 	  <a href="Book22.html"><p>Reading Goals'22</p></a>
@@ -545,7 +552,11 @@ function myFunction123() {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-
+<footer style="background-color:#3C2D80;color:white;padding:10px;text-align:center;margin-top:10px;padding-bottom:50px;">
+    <div style="padding:10px">Come for the blog, stay for the creativity.
+Welcome! Broadening Horizons is a creativity blog. We cover everything from Recipes to Technology to Lifestyle to Art, and we strive to be authentic. As Olive Kitteridge said, “There’s no such thing as a simple life.” Thank you for reading. 
+	</div><hr></hr><div style="padding:10px">ALL MATERIALS COPYRIGHT @SHREYA AGASTI</div>
+</body>
 </body>
 </html>
 		

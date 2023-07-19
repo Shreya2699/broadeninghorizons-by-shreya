@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles</title>
+	<meta name="hello" content="page description"/>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.heading{
+			font-family: 'Dancing Script', cursive;
+			font-size: 2.4rem;
+			font-weight: bold;
+			padding: 0.4rem;
+			text-align: center;
+			padding-top:80px;
+			color:#6D214F;
+		}
+		
+		body{
+			
+			background-position:center center;
+			background-color:#F6F2E4;
+			text-align:justify;
+			
+			
+	
+		
+		}
+		
+		.header {
+			  overflow: hidden;
+			  background-color:#303952;
+			  padding:0.5rem;
+			  position:fixed;
+			  width:100%;
+			  
+			}
+		.header a {
+				display:flex;
+				float:left;
+			
+			  color:white;
+			  
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 1.2rem;
+			  font-weight: bolder;
+			  font-family: 'Roboto', sans-serif;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
+			  }
+			}
+		@media screen and (max-width: 600px) {
+			  .header.responsive {position: fixed;}
+			  .header.responsive a.icon {
+					position: fixed;
+					right: 0;
+					top: 0;
+				}
+				.header.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+			  }
+			}
+		
+		
+		
+		.item{
+			text-align:center;
+
+			}
+		body{
+			
+			background-repeat:no-repeat; 
+			background-size:cover; 
+			
+		
+		}
+	
+	.e1{
+		text-align:center;
+		padding:10px;
+	}
+	.round-image{
+		
+		overflow:hidden;
+		border:1px solid;
+		width:100%;
+		height:200px;
+		border-color:black;
+}
+
+	.c2{
+		display:block;
+	}
+		
+.div-1{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	flex-wrap: wrap;
+	background:#F6F2E4;;
+	
+	width:100%;
+	height:auto;
+	
+}
+.round-image1{
+	display:flex;
+	justify-content:space-evenly;
+	overflow: hidden;
+	
+
+}
+.c1{
+	display:flex;
+	background-color: #FADFBA;
+	font-family: 'Signika', sans-serif;
+	font-weight: bold;
+	color:#6D214F;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width:300px;
+	height:400px;
+	border:2px solid #FADFBA;
+	padding:10px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.c1:hover{
+	box-shadow:5px 5px 5px 5px #D0A66D;
+}
+.e1.a{
+	color:#6D214F;
+}
+ 
+.heading1{
+			font-family: cursive;
+			font-size: 1.4rem;
+			
+			
+			color:#FBE4A9;
+			
+			
+		}	
+		
+		  
+		
+		
+		
+	</style>
+	
+	
+</head>
+<body align="center" background-color=#f4c3c6 style="background-repeat:no-repeat; background-size:cover;">
+<div class="header" id="myHeader">
+  
+  
+    <a href='index.html'  style="color:white">
+			<span class="heading1">Broadening Horizons</span>
+		</a>
+    <a href='articles.html' style="color:white">Lifestyle</a>
+    <a href='recipes.html' style="color:white">Recipes</a>
+	
+	<a href='articles.html' style="color:white">Technology</a>
+	
+	<a href='art gallery.html'style="color: white">Art gallery</a>
+	<a href='contact.html' style="color:white">Contact</a>
+	<a href='subscribe.html'style="color:white">Subscribe</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+  </a>
+  
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myHeader");
+  if (x.className === "header") {
+    x.className += " responsive";
+  } else {
+    x.className = "header";
+  }
+}
+</script>
+<div class="heading">
+	Bring Out The Geek In You...
+</div>
+<div class="div-1">
+	<!--Computers talk-->
+	<div class="c1">
+		<div class="c2">
+			<div class="e1">
+				Communication has become one of the most important traits of the modern world. It's the ..
+			</div>
+			<div class="round-image1">
+				<img class="round-image" src="Untitled design.jpg"  alt="">
+			</div>
+			<div class="e1">
+				<h3><a href='tech1.html' ><button type="button" class="btn btn-primary">How Computers Talk!</button></a></em></h3> </font> 
+			</div>
+		
+		</div>
+	</div>
+	
+
+
+
+	
+
+
+
+	
+	
+	
+	
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>	
+
+
+<footer style="background-color:#3C2D80;color:white;padding:10px;text-align:center;margin-top:10px;padding-bottom:50px;">
+    <div style="padding:10px">Come for the blog, stay for the creativity.
+Welcome! Broadening Horizons is a creativity blog. We cover everything from Recipes to Technology to Lifestyle to Art, and we strive to be authentic. As Olive Kitteridge said, “There’s no such thing as a simple life.” Thank you for reading. 
+	</div><hr></hr><div style="padding:20px">ALL MATERIALS COPYRIGHT @SHREYA AGASTI</div>
+
+
+<!--<div class="item" >
+		<p><font color="white"><h3><a href='Storm The Brain.html' style="color:white">Storm the brain</a></em></h3> </font></p>
+		<img alt="" src="food123/bsh4.JPG" class="center">
+	</div>
+
+
+	<div class="item" >
+		<p><font color="white"><h3><a href='Meditative Doodling.html' style="color:white">Meditative Doodling</a></h3> </font></p>
+		<img alt="" src="food123/M1.JPG"  class="center">		
+	</div>
+	<div class="item" >
+		<p><font color="white"><a href='live or exist.html' style="color:white"><h3>You Live Or Exist</a></h3> </font></p>
+		<img alt="" src="food123/l1.JPG" class="center">
+		
+	</div>
+	<div class="item" >
+		<p><font color="white"><h3><a href='hats.html' style="color:white">The Thinking Hats</h3></a> </font></p>
+		<img alt="" src="https://image.slidesharecdn.com/slidesharesixhatthinking-171213212828/95/six-thinking-hats-1-638.jpg?cb=1513200678" class="center">
+		
+		
+	</div>
+	<div class="item" >
+		<p><font color="white"><h3><a href='stunted blossom.html' style="color:white">	Stunted Blossom</h3></a> </font></p>
+		<img alt="" src="https://previews.123rf.com/images/rawpixel/rawpixel1607/rawpixel160721878/59419920-kid-child-chilren-playful-childhood-concept.jpg"class="center">
+		
+		
+	</div>
+	<div class="item" >
+		<p><font color="white"><h3><a href='colours.html' style="color:white">Live in Colours</h3></a> </font></p>
+		<img alt="" src="food123/a1.JPG" class="center">
+		
+		
+	</div>
+	<div class="item" >
+		<p><font color="white"><h3><a href='Covid.html' style="color:white">India's Scrimmage Against Covid-19</h3></a> </font></p>
+		<img alt="" src="food123/co5.JPG" class="center">
+		
+		
+	</div>
+
+
+
+<footer style="background-color:#3C2D80;color:white;padding:10px;text-align:center;margin-top:10px;padding-bottom:50px;">
+    <div style="padding:10px">Come for the blog, stay for the creativity.
+Welcome! Broadening Horizons is a creativity blog. We cover everything from Recipes to Technology to Lifestyle to Art, and we strive to be authentic. As Olive Kitteridge said, “There’s no such thing as a simple life.” Thank you for reading. 
+	</div><hr></hr><div style="padding:20px">ALL MATERIALS COPYRIGHT @SHREYA AGASTI</div>
+	
+
+</body>
+</html>

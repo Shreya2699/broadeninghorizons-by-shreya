@@ -31,8 +31,11 @@
 			text-align:justify;
 
 
-Expand All
-	@@ -39,7 +25,7 @@
+	
+		
+		}
+		
+		.header {
 			  overflow: hidden;
 			  background-color:#303952;
 			  padding:0.5rem;
@@ -40,8 +43,26 @@ Expand All
 			  width:100%;
 
 			}
-Expand All
-	@@ -66,9 +52,9 @@
+		.header a {
+				display:flex;
+				float:left;
+			
+			  color:white;
+			  
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 1.2rem;
+			  font-weight: bolder;
+			  font-family: 'Roboto', sans-serif;
+			}
+		.header .icon {
+				display: none;
+			}
+		@media screen and (max-width: 600px) {
+			  .header a:not(:first-child) {display: none;}
+			  .header a.icon {
+					float: right;
+					display: block;
 			  }
 			}
 		@media screen and (max-width: 600px) {
@@ -51,8 +72,9 @@ Expand All
 					right: 0;
 					top: 0;
 				}
-Expand All
-	@@ -78,80 +64,34 @@
+				.header.responsive a {
+					float: none;
+					display: block;
 					text-align: left;
 			  }
 			}
@@ -93,7 +115,7 @@ Expand All
 	flex-direction:row;
 	justify-content:space-evenly;
 	flex-wrap: wrap;
-	background:#f4c3c6;
+	background:#F6F2E4;
 
 	width:100%;
 	height:auto;
@@ -108,7 +130,7 @@ Expand All
 }
 .c1{
 	display:flex;
-	background-color: #f8c291;
+	background-color: #F6F2E4;
 	font-family: 'Signika', sans-serif;
 	font-weight: bold;
 	color:#6D214F;
@@ -127,7 +149,6 @@ Expand All
 .e1.a{
 	color:#6D214F;
 }
-
 
 	</style>
 	

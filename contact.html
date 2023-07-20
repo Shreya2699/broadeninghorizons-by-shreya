@@ -134,7 +134,7 @@ function myFunction() {
                             Contact
                      </div>
 					 <div class="contact" style="margin:60px;text-align:left;">
-					 <form  method="post" autocomplete="off" name="google-sheet">
+					 <form id="Form" method="post" autocomplete="off" name="google-sheet">
 						 <div id="demo">
                      <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Name</label>
@@ -167,7 +167,7 @@ function myFunction() {
 				  <script src="https://smtpjs.com/v3/smtp.js">
 					</script>
 				  <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbxt5EBdGTHaeK5nZR8C7CqKmLhOEc9eDeqXLbBvkKM7vnV8gHfb0RLkXud9ot9u0vEz/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxuc6_2jCBdr8GW1VWBkF6KFx3JyAZUgYPfqyggSm6jO95bSnkFyCErHKWLH5CTGatb/exec'
             const form = document.forms['google-sheet']
 			var book=document.getElementById("book");
 			var thanks=document.getElementById("thanks");
@@ -181,6 +181,8 @@ function myFunction() {
 									 
 				)
                 .catch(error => console.error('Error!', error.message))
+		      alert("The form was submitted");
+		document.getElementById("Form").reset();
             })
 					  
 			

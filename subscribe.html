@@ -136,7 +136,7 @@ function myFunction() {
                             Subscribe 
                      </div>
 					 <div class="contact"style="margin:60px;text-align:left;">
-					 <form method="post" autocomplete="off" name="google-sheet">
+					 <form method="post" id="Form"autocomplete="off" name="google-sheet">
                      <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Name</label>
                         <input name="Name" type="text" class="form-control" id="exampleInputPassword1">
@@ -164,7 +164,7 @@ function myFunction() {
 				  <script src="https://smtpjs.com/v3/smtp.js">
 					</script>
 				  <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwyextWr0E5ZXrJfPHToNPv_AshdcdcLBf3yBOT3yj_Qw9EmK3xFiyc6tcvozDDzxVx/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwcjGa0fc0zSDydbeyemVdMv2KM3gD_oimNnXU3ORhphqmoAcDpCj03f8rwxNVge1VG/exec'
             const form = document.forms['google-sheet']
 			var book=document.getElementById("book");
 			var thanks=document.getElementById("thanks");
@@ -172,12 +172,10 @@ function myFunction() {
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => book.style.display="none",
-									thanks.style.display="block"
-									
-									 
-				)
+
                 .catch(error => console.error('Error!', error.message))
+		    alert("The form was submitted");
+		document.getElementById("Form").reset();
             })
 			
 			
